@@ -66,7 +66,7 @@ const profiles = [
   { name: "BIHANDU BINUWARA SETUNGA", image: "/IMG_0630.webp" },
   { name: "CHENIRAU HANSANA HETTIARACHCHI", image: "/IMG_0659.webp" },
   { name: "DANUJA DINSARA GALGANAGE DEVINUWARA", image: "/IMG_0635.webp" },
-  { name: "CHENUL SEHITHA HALLINNA LOKUGE", image: "/IMG_0674 MISSING.webp" },//MISSING IMAGE HERE
+  { name: "CHENUL SEHITHA HALLINNA LOKUGE", image: "/64.jpg" },//MISSING IMAGE HERE
   { name: "MALAWEERA ARACHCHIGE RUSANDU THEJAKA", image: "/IMG_0626.webp" },
   { name: "WATAREKA GAMAGE IMETH CHANULKA", image: "/IMG_0664.webp" },
   { name: "ISHIL INDUMINA VITHANAGE", image: "/IMG_0617.webp" }
