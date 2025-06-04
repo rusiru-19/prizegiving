@@ -12,7 +12,7 @@ const profiles = [
   { name: "PEMITHA RIYON HETTIARACHCHI", image: "/IMG_0481.webp" },
   { name: "KEMIDU SEHAS THISRAKA KARUNARATHNA", image: "/IMG_0488.webp" },
   { name: "KAMARE ARACHCHIGE ROCHAKA JIGYOOSH", image: "/IMG_0489.webp" },
-  { name: "ELABADAGE NINUK KULAN ABHIMANYU", image: "/IMG_0493.webp" },
+  { name: "ELABADAGE VINUK KULAN ABHIMANYU", image: "/IMG_0493.webp" },
   { name: "HETTIHANDI KALUHEWA USARA AKAIN MENDIS", image: "/IMG_0497.webp" },
   { name: "JUWANWADU SHANE UDHEERA", image: "/IMG_0470.webp" },
   { name: "PANDITHA VIDHANA BIHANDU THATHSANDA GUNAWARDHANA", image: "/IMG_0494.webp" },
@@ -24,14 +24,17 @@ const profiles = [
   { name: "KALUPAHANAGE VIDUN HANSANA SETHVIN", image: "/IMG_0689.webp" },
   { name: "SENUJA RANDILU RANASINGHE", image: "/IMG_0506.webp" },
   { name: "PATHEGAMAGE AKINDU LAKDULA", image: "/IMG_0510.webp" },
-  { name: "CHANULA DULEN THIRIMAWITHANA", image: "/IMG_0874.webp" },
+  { name: "CHANULA DULEN THIRIMAWITHANA", image: "/IMG_0674.webp" },
+  { name: "THARUL DINHAS BHUPATHI HIKKADUWA VITHANAGE", image: "/IMG_0555.webp" },
   { name: "SANDAPPERUMA ARCHCHIGE REJINALD SEHANSITH RANMUTHU", image: "/IMG_0701.webp" },
-  { name: "MALDENIYA HIBUTUGODAGE LOSHITHA NETHMAHAL VIJAYARATHNA", image: "/IMG_0515.webp" },
-  { name: "RATHNAWEERA HEWAWITHARANAGE YASINDU HANSAKA", image: "/IMG_3668.webp" },
+  { name: "HIBUTUGODAGE LOSHITHA NETHMAHAL VIJAYARATHNA", image: "/IMG_0515.webp" },
+  { name: "RATHNAWEERA HEWAWITHARANAGE YASINDU HANSAKA", image: "/IMG_0668.webp" },
+  { name: "SUHAS VINVIDU UDALAMATHTHA GAMAGE", image: "/IMG_0883.webp" },
   { name: "DODAMPE KANKANAMAGE MENULA YETHUM SATHVIDU", image: "/IMG_0521.webp" },
   { name: "VINUSH YASHEN FERNANDO", image: "/IMG_0538.webp" },
   { name: "KUDAGE RESHAN SATHSINDU", image: "/IMG_0524.webp" },
   { name: "SANDEW SASVIDU WALAWEGE", image: "/IMG_0527.webp" },
+  { name: "WATHALA GITHSARA", image: "/IMG_0534.webp" },
   { name: "PAHALA GAMAGE GIHANSITH AVINDA", image: "/IMG_0532.webp" },
   { name: "DORALAGODA KANKANAMGE NIDUKA DEWMINA", image: "/IMG_0541.webp" },
   { name: "UDUWAKA HEWAGE GANIDU KAWISHNA", image: "/IMG_0544.webp" },
@@ -63,6 +66,7 @@ const profiles = [
   { name: "BIHANDU BINUWARA SETUNGA", image: "/IMG_0630.webp" },
   { name: "CHENIRAU HANSANA HETTIARACHCHI", image: "/IMG_0659.webp" },
   { name: "DANUJA DINSARA GALGANAGE DEVINUWARA", image: "/IMG_0635.webp" },
+  { name: "CHENUL SEHITHA HALLINNA LOKUGE", image: "/IMG_0674 MISSING.webp" },//MISSING IMAGE HERE
   { name: "MALAWEERA ARACHCHIGE RUSANDU THEJAKA", image: "/IMG_0626.webp" },
   { name: "WATAREKA GAMAGE IMETH CHANULKA", image: "/IMG_0664.webp" },
   { name: "ISHIL INDUMINA VITHANAGE", image: "/IMG_0617.webp" }
@@ -74,7 +78,7 @@ export default function ProfileCard() {
 
   // Handle left/right arrow key navigation
   useEffect(() => {
-    const handleKeyDown = (e) => {
+    const handleKeyDown = (e:any) => {
       if (e.key === 'ArrowRight') {
         setCurrentIndex((prev) => (prev + 1) % profiles.length);
       } else if (e.key === 'ArrowLeft') {
@@ -129,7 +133,7 @@ export default function ProfileCard() {
                 src={currentProfile.image}
                 alt={currentProfile.name}
                 className="w-full h-full object-cover"
-                onError={(e) => {
+                onError={(e:any) => {
                   e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE2MCIgcj0iNjAiIGZpbGw9IiM5Q0EzQUYiLz4KPHBhdGggZD0iTTEwMCAzMDBDMTAwIDI1MCA1MCAyMDAgMjAwIDIwMFMzMDAgMjUwIDMwMCAzMDBIMTAwWiIgZmlsbD0iIzlDQTNBRiIvPgo8L3N2Zz4K';
                 }}
               />
