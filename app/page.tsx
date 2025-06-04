@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 const profiles = [
   { name: "MAHA DURAGE SADUL CHATHSARA JAYASENA", image: "/IMG_0484.webp" },
-  { name: "VIDUNITHA THEWJAN GODEVITHANA", image: "/IMG_0484.webp" },
+  { name: "VIDUNITHA THEWJAN GODEVITHANA", image: "/IMG_0686.webp" },
   { name: "LAKIRA VINUTH KUMARASIRI JAYAWARDENA", image: "/IMG_0685.webp" },
   { name: "RATHNAYAKATHUDUGODA BADALGE SADUPA MANSADA", image: "/IMG_0475.webp" },
   { name: "PETHTHADURA SANUL DULNITHA", image: "/IMG_0479.webp" },
